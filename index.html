@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Disable double-tap to zoom</title>
+    <style>
+      .disable-dbl-tap-zoom {
+        touch-action: manipulation;
+      }
+
+      .round {
+        border-radius: 40px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        width: 80px;
+      }
+
+      .round.primary {
+        color: white;
+        background: blue;
+      }
+
+      .round.secondary {
+        color: white;
+        background: red;
+      }
+
+      .mt-1 {
+        margin-top: 0.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="round primary disable-dbl-tap-zoom">
+      No zoom!
+    </div>
+    <div class="round secondary mt-1">
+      Zoom :(
+    </div>
+  </body>
+</html>
